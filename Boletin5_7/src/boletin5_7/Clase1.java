@@ -5,6 +5,7 @@ import java.util.Scanner;
 public class Clase1 {
     public void superficies (int op){
         Scanner sc = new Scanner(System.in);
+        final float PI = (float)3.14;
         
         switch (op){
             case 1: System.out.println("Introduce el lado del cuadrado");
@@ -19,7 +20,7 @@ public class Clase1 {
                     break;
             case 3: System.out.println("Introduce el radio del circulo");
                     double radio = sc.nextDouble();
-                    System.out.println("Superficie del Circulo = "+(3.14*Math.pow(radio, 2)));
+                    System.out.println("Superficie del Circulo = "+(PI*Math.pow(radio, 2)));
                     break;
             default: System.out.println("La opcion introducida no es valida");
         }
